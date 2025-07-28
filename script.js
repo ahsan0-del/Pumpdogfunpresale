@@ -1,8 +1,7 @@
-// Set presale end date (7 days from now)
-const presaleEnd = new Date();
-presaleEnd.setDate(presaleEnd.getDate() + 7);
-presaleEnd.setHours(23, 59, 59, 0); // Ends at 11:59 PM
+// PRESALE END: August 4, 2025 at 5:21 PM (local time)
+const presaleEnd = new Date(2025, 7, 4, 17, 21, 0); // Month is 0-indexed (7 = August)
 
+// Countdown Timer
 function updateCountdown() {
   const now = new Date();
   const diff = presaleEnd - now;
@@ -23,6 +22,21 @@ function updateCountdown() {
   document.getElementById("seconds").textContent = seconds.toString().padStart(2, '0');
 }
 
-// Update every second
+// Copy Address Function
+document.getElementById("copyButton").addEventListener("click", function() {
+  const address = document.getElementById("walletAddress").textContent;
+  navigator.clipboard.writeText(address.trim());
+  
+  // Visual feedback
+  const btn = this;
+  btn.innerHTML = '<i class="fas fa-check"></i>';
+  btn.classList.add("pulse");
+  setTimeout(() => {
+    btn.innerHTML = '<i class="fas fa-copy"></i>';
+    btn.classList.remove("pulse");
+  }, 2000);
+});
+
+// Initialize
 setInterval(updateCountdown, 1000);
-updateCountdown(); // Initial call
+updateCountdown();
