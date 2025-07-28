@@ -1,73 +1,96 @@
+/* Base Styles */
 body {
-  background: linear-gradient(to right, #8e2de2, #4a00e0);
+  font-family: 'Arial', sans-serif;
+  background: #0f0c29;
+  background: linear-gradient(to right, #0f0c29, #302b63, #24243e);
   color: white;
-  font-family: Arial;
-  text-align: center;
+  margin: 0;
   padding: 20px;
+  line-height: 1.6;
 }
 
 .container {
-  max-width: 500px;
+  max-width: 600px;
   margin: 0 auto;
-  background: rgba(0,0,0,0.3);
-  padding: 30px;
-  border-radius: 15px;
+  text-align: center;
 }
 
+.logo {
+  width: 120px;
+  height: 120px;
+  margin-bottom: 20px;
+}
+
+h1 {
+  color: #f1c40f;
+  margin: 10px 0;
+}
+
+/* Timer Box */
 .timer-box {
   background: rgba(255,255,255,0.1);
-  padding: 15px;
-  border-radius: 10px;
-  margin: 20px 0;
+  padding: 20px;
+  border-radius: 15px;
+  margin: 25px 0;
 }
 
 #countdown {
-  font-size: 24px;
+  font-size: 28px;
   font-weight: bold;
+  margin-top: 10px;
+  color: #f1c40f;
+}
+
+/* Payment Box */
+.payment-box {
+  background: rgba(0,0,0,0.3);
+  padding: 20px;
+  border-radius: 15px;
+  margin-bottom: 25px;
+  text-align: left;
 }
 
 .address-display {
-  background: yellow;
+  background: #f1c40f;
   color: black;
   padding: 12px;
   border-radius: 8px;
   margin: 15px 0;
-  word-break: break-all;
   font-family: monospace;
+  word-break: break-all;
+  font-size: 14px;
 }
 
-button {
-  background: #0066ff;
-  color: white;
-  border: none;
+/* Token Info */
+.token-info {
+  background: rgba(255,255,255,0.1);
+  padding: 20px;
+  border-radius: 15px;
+  margin-bottom: 25px;
+  text-align: left;
+}
+
+/* Social Links */
+.social-links {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 30px;
+}
+
+.social-links a {
   padding: 12px 25px;
-  font-size: 16px;
-  border-radius: 5px;
-  cursor: pointer;
-  margin: 10px 0;
-  width: 100%;
+  border-radius: 50px;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
 }
 
-button:disabled {
-  background: #555;
-  cursor: not-allowed;
-}
+.telegram { background: #0088cc; }
+.twitter { background: #1DA1F2; }
 
-#paymentStatus {
-  margin: 20px 0;
-  min-height: 50px;
-}
-
-.payment-success {
-  background: rgba(0,255,0,0.1);
-  padding: 10px;
-  border-radius: 5px;
-  border: 1px solid #0f0;
-}
-
-.tx-link {
-  color: #aaa;
-  font-size: 13px;
-  margin-top: 15px;
-  display: inline-block;
+/* Mobile Responsive */
+@media (max-width: 600px) {
+  #countdown { font-size: 22px; }
+  .address-display { font-size: 12px; }
 }
