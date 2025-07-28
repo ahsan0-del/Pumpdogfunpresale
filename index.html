@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>PumpDogFun Presale</title>
+  <link href="./style.css" rel="stylesheet">
+  <script src="https://cdn.ethers.io/lib/ethers-5.2.umd.min.js"></script>
+</head>
+<body>
+  <div class="container">
+    <h1>🚀 PumpDogFun Presale</h1>
+    
+    <!-- Presale Timer -->
+    <div class="timer-box">
+      <p>⏰ Presale Ends In:</p>
+      <div id="countdown">00d 00h 00m 00s</div>
+    </div>
+
+    <!-- Wallet Connection -->
+    <button id="connectButton">Connect Wallet</button>
+    <p class="mobile-help">📱 Mobile? Open in Trust Wallet browser</p>
+
+    <!-- Payment Section -->
+    <div class="payment-box">
+      <p>Send USDT (BEP-20) to:</p>
+      <div class="address-display" id="presaleAddress">0xDF21B5046cdD2EE9d7dDD2a6f8C01D5676997762</div>
+      <p>Minimum: 10 USDT</p>
+    </div>
+
+    <!-- Verification Status -->
+    <div id="paymentStatus"></div>
+
+    <!-- Token Claim (Shows after presale) -->
+    <button id="claimButton" disabled>Claim PDF Tokens</button>
+    <a href="https://bscscan.com/address/0xDF21B5046cdD2EE9d7dDD2a6f8C01D5676997762" 
+       target="_blank" class="tx-link">View Transactions</a>
+  </div>
+
+  <script src="./script.js"></script>
+</body>
+</html>
