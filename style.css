@@ -1,129 +1,9 @@
-/* Base Styles */
-body {
-  font-family: 'Poppins', sans-serif;
-  background: linear-gradient(135deg, #0f0c29, #302b63);
-  color: white;
-  margin: 0;
-  padding: 20px;
-  min-height: 100vh;
-}
-
-.container {
-  max-width: 600px;
-  margin: 0 auto;
+/* Social Links - Twitter Only */
+.social-links {
+  margin-top: 30px;
   text-align: center;
 }
 
-.logo {
-  width: 120px;
-  height: 120px;
-  margin-bottom: 15px;
-}
-
-h1 {
-  color: #f1c40f;
-  margin: 10px 0;
-  font-size: 2rem;
-}
-
-.subtitle {
-  color: #88d3ce;
-  margin-bottom: 20px;
-}
-
-/* Promo Banner */
-.promo-banner {
-  margin: 20px 0;
-  border-radius: 10px;
-  overflow: hidden;
-}
-
-.promo-banner img {
-  width: 100%;
-  height: auto;
-  border-radius: 10px;
-  border: 2px solid #f1c40f;
-}
-
-/* Timer Box */
-.timer-box {
-  background: rgba(255,255,255,0.1);
-  padding: 15px;
-  border-radius: 10px;
-  margin: 20px 0;
-}
-
-#countdown {
-  font-size: 1.8rem;
-  font-weight: bold;
-  color: #f1c40f;
-  font-family: 'Courier New', monospace;
-}
-
-/* Payment Box */
-.payment-box {
-  background: rgba(0,0,0,0.3);
-  padding: 15px;
-  border-radius: 10px;
-  margin: 20px 0;
-  text-align: left;
-}
-
-.address-container {
-  display: flex;
-  gap: 10px;
-  margin: 15px 0;
-}
-
-.address-display {
-  background: rgba(241, 196, 15, 0.2);
-  color: #f1c40f;
-  padding: 12px;
-  border-radius: 8px;
-  font-family: monospace;
-  flex-grow: 1;
-  word-break: break-all;
-  font-size: 14px;
-}
-
-.copy-btn {
-  background: #6e45e2;
-  color: white;
-  border: none;
-  padding: 0 15px;
-  border-radius: 8px;
-  cursor: pointer;
-}
-
-/* Token Details */
-.token-details {
-  background: rgba(255,255,255,0.05);
-  padding: 15px;
-  border-radius: 10px;
-  margin: 20px 0;
-}
-
-.detail-row {
-  display: flex;
-  justify-content: space-between;
-  padding: 10px 0;
-  border-bottom: 1px solid rgba(255,255,255,0.1);
-}
-
-.detail-row:last-child {
-  border-bottom: none;
-}
-
-.detail-label {
-  color: #88d3ce;
-}
-
-.detail-value {
-  font-weight: bold;
-  color: #f1c40f;
-}
-
-/* Twitter Button */
 .twitter {
   display: inline-block;
   background: #1DA1F2;
@@ -131,27 +11,9 @@ h1 {
   padding: 12px 25px;
   border-radius: 50px;
   text-decoration: none;
-  margin-top: 20px;
   font-weight: bold;
 }
 
-/* Mobile Responsive */
-@media (max-width: 600px) {
-  .container {
-    padding: 15px;
-  }
-  
-  h1 {
-    font-size: 1.5rem;
-  }
-  
-  #countdown {
-    font-size: 1.4rem;
-  }
-  
-  .address-display {
-    font-size: 12px;
-  padding: 10px;
-  word-break: break-all;
-  }
+.twitter:hover {
+  background: #1991db;
 }
