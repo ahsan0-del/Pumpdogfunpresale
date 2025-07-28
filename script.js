@@ -1,5 +1,5 @@
-// PRESALE END: August 4, 2025 at 5:21 PM (local time)
-const presaleEnd = new Date(2025, 7, 4, 17, 21, 0); // Month is 0-indexed (7 = August)
+// Set presale end date (August 4, 2025 5:21 PM)
+const presaleEnd = new Date(2025, 7, 4, 17, 21, 0);
 
 // Countdown Timer
 function updateCountdown() {
@@ -30,10 +30,8 @@ document.getElementById("copyButton").addEventListener("click", function() {
   // Visual feedback
   const btn = this;
   btn.innerHTML = '<i class="fas fa-check"></i>';
-  btn.classList.add("pulse");
   setTimeout(() => {
     btn.innerHTML = '<i class="fas fa-copy"></i>';
-    btn.classList.remove("pulse");
   }, 2000);
 });
 
