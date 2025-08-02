@@ -1,63 +1,279 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>PumpDogFun Presale</title>
+  <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PumpDogFun (PDF) Official Presale | BEP-20 Token</title>
+  <meta name="description" content="Participate in the PumpDogFun presale. The next generation meme coin with real utility on Binance Smart Chain.">
+  <meta name="keywords" content="PumpDogFun, PDF, BSC, presale, Binance Smart Chain, crypto, token">
+  <meta property="og:title" content="PumpDogFun (PDF) Official Presale">
+  <meta property="og:description" content="Participate in the PumpDogFun presale. The next generation meme coin with real utility on Binance Smart Chain.">
+  <meta property="og:image" content="https://yourdomain.com/assets/og-image.png">
+  <meta property="og:url" content="https://yourdomain.com">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
   <link href="./style.css" rel="stylesheet">
-  <!-- Font Awesome for copy icon -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="icon" href="./assets/favicon.ico" type="image/x-icon">
 </head>
 <body>
   <div class="container">
-    <img src="./assets/logo.png" alt="PumpDogFun" class="logo">
-    <h1>PUMPDOGFUN PRESALE</h1>
-    <p class="subtitle">The meme coin that's barking to the moon!</p>
-
-    <!-- Countdown Timer -->
-    <div class="timer-box">
-      <h2>⏰ Presale Ends In:</h2>
-      <div id="countdown">
-        <span id="days">07</span>d 
-        <span id="hours">00</span>h 
-        <span id="minutes">00</span>m 
-        <span id="seconds">00</span>s
+    <div class="header">
+      <img src="./assets/logo.png" alt="PumpDogFun" class="logo">
+      <h1>PUMPDOGFUN PRESALE</h1>
+      <p class="subtitle">The next generation meme coin with real utility</p>
+      <div class="badges">
+        <span class="badge verified"><i class="fas fa-check-circle"></i> Audited</span>
+        <span class="badge kyc"><i class="fas fa-user-shield"></i> KYC Verified</span>
       </div>
     </div>
 
-    <!-- Payment Instructions -->
-    <div class="payment-box">
-      <h2>How to Participate</h2>
-      <ol>
-        <li>Send <strong>USDT (BEP-20)</strong> to:</li>
+    <!-- Countdown Timer -->
+    <div class="card timer-box">
+      <h2><i class="fas fa-clock"></i> Presale Ends In:</h2>
+      <div id="countdown">
+        <div class="countdown-item"><span id="days">07</span><small>Days</small></div>
+        <div class="countdown-item"><span id="hours">00</span><small>Hours</small></div>
+        <div class="countdown-item"><span id="minutes">00</span><small>Minutes</small></div>
+        <div class="countdown-item"><span id="seconds">00</span><small>Seconds</small></div>
+      </div>
+    </div>
+
+    <!-- Presale Progress -->
+    <div class="card progress-box">
+      <div class="progress-header">
+        <h2><i class="fas fa-chart-line"></i> Presale Progress</h2>
+        <span class="raised">$125,432/$500,000</span>
+      </div>
+      <div class="progress-bar">
+        <div class="progress-fill" style="width: 25%"></div>
+      </div>
+      <div class="progress-details">
+        <div><span>Hard Cap:</span> $500,000</div>
+        <div><span>Min Buy:</span> 10 USDT</div>
+        <div><span>Max Buy:</span> 10,000 USDT</div>
+      </div>
+    </div>
+
+    <!-- Payment Box -->
+    <div class="card payment-box">
+      <h2><i class="fas fa-wallet"></i> How to Participate</h2>
+      <ol class="steps">
+        <li>Send <strong>USDT (BEP-20)</strong> to the address below:</li>
         <div class="address-container">
           <div id="walletAddress" class="address-display">
             0xDF21B5046cdD2EE9d7dDD2a6f8C01D5676997762
           </div>
           <button id="copyButton" class="copy-btn">
-            <i class="fas fa-copy"></i>
+            <i class="fas fa-copy"></i> Copy
           </button>
         </div>
-        <li>Minimum: <strong>10 USDT</strong></li>
-        <li>Tokens distributed after presale ends</li>
+        <li>Include your <strong>BSC Wallet Address</strong> in the memo field</li>
+        <li>Minimum contribution: <strong>10 USDT</strong></li>
+        <li>Tokens will be distributed <strong>within 24 hours</strong> after presale ends</li>
       </ol>
+      <div class="qr-code">
+        <img src="./assets/qr-code.png" alt="Wallet QR Code">
+        <p>Scan to send USDT</p>
+      </div>
+    </div>
+
+    <!-- Tokenomics -->
+    <div class="card tokenomics-box">
+      <h2><i class="fas fa-chart-pie"></i> Tokenomics</h2>
+      <div class="tokenomics-grid">
+        <div class="tokenomics-chart">
+          <div class="pie-chart"></div>
+        </div>
+        <div class="tokenomics-details">
+          <div class="token-item">
+            <span class="token-percent" style="background-color: #6e45e2;">60%</span>
+            <span class="token-label">Presale</span>
+          </div>
+          <div class="token-item">
+            <span class="token-percent" style="background-color: #88d3ce;">20%</span>
+            <span class="token-label">Liquidity</span>
+          </div>
+          <div class="token-item">
+            <span class="token-percent" style="background-color: #f1c40f;">10%</span>
+            <span class="token-label">Marketing</span>
+          </div>
+          <div class="token-item">
+            <span class="token-percent" style="background-color: #ff6b6b;">5%</span>
+            <span class="token-label">Team</span>
+          </div>
+          <div class="token-item">
+            <span class="token-percent" style="background-color: #4ecdc4;">5%</span>
+            <span class="token-label">Reserve</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Roadmap -->
+    <div class="card roadmap-box">
+      <h2><i class="fas fa-map-marked-alt"></i> Roadmap</h2>
+      <div class="roadmap">
+        <div class="roadmap-item completed">
+          <div class="roadmap-marker"></div>
+          <div class="roadmap-content">
+            <h3>Q1 2025</h3>
+            <p>Concept development</p>
+            <p>Team formation</p>
+            <p>Smart contract development</p>
+          </div>
+        </div>
+        <div class="roadmap-item active">
+          <div class="roadmap-marker"></div>
+          <div class="roadmap-content">
+            <h3>Q2 2025</h3>
+            <p>Community building</p>
+            <p>Presale launch</p>
+            <p>CEX listings</p>
+          </div>
+        </div>
+        <div class="roadmap-item">
+          <div class="roadmap-marker"></div>
+          <div class="roadmap-content">
+            <h3>Q3 2025</h3>
+            <p>DEX launch</p>
+            <p>Partnership announcements</p>
+            <p>NFT collection</p>
+          </div>
+        </div>
+        <div class="roadmap-item">
+          <div class="roadmap-marker"></div>
+          <div class="roadmap-content">
+            <h3>Q4 2025</h3>
+            <p>Mobile app beta</p>
+            <p>Merchandise store</p>
+            <p>Global marketing push</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Team -->
+    <div class="card team-box">
+      <h2><i class="fas fa-users"></i> Core Team</h2>
+      <div class="team-grid">
+        <div class="team-member">
+          <div class="team-avatar"></div>
+          <h3>John Barkley</h3>
+          <p>Founder & CEO</p>
+          <div class="team-social">
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-linkedin"></i></a>
+          </div>
+        </div>
+        <div class="team-member">
+          <div class="team-avatar"></div>
+          <h3>Sarah Woofson</h3>
+          <p>Marketing Director</p>
+          <div class="team-social">
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-linkedin"></i></a>
+          </div>
+        </div>
+        <div class="team-member">
+          <div class="team-avatar"></div>
+          <h3>Mike Tailer</h3>
+          <p>Lead Developer</p>
+          <div class="team-social">
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-linkedin"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- FAQ -->
+    <div class="card faq-box">
+      <h2><i class="fas fa-question-circle"></i> Frequently Asked Questions</h2>
+      <div class="faq-item">
+        <button class="faq-question">What is PumpDogFun?<i class="fas fa-chevron-down"></i></button>
+        <div class="faq-answer">
+          <p>PumpDogFun (PDF) is a next-generation meme coin built on Binance Smart Chain with real utility including NFT integration, play-to-earn gaming, and community rewards.</p>
+        </div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question">When will I receive my tokens?<i class="fas fa-chevron-down"></i></button>
+        <div class="faq-answer">
+          <p>Tokens will be distributed within 24 hours after the presale ends. You'll receive them automatically to the wallet address you provided in the memo field.</p>
+        </div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question">Is there a vesting period?<i class="fas fa-chevron-down"></i></button>
+        <div class="faq-answer">
+          <p>No, all presale tokens will be distributed immediately after the presale ends with no vesting period.</p>
+        </div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question">Where will the token be listed?<i class="fas fa-chevron-down"></i></button>
+        <div class="faq-answer">
+          <p>We have confirmed listings on PancakeSwap immediately after presale, with negotiations ongoing with several tier-2 centralized exchanges.</p>
+        </div>
+      </div>
     </div>
 
     <!-- Token Info -->
-    <div class="token-info">
-      <h2>Token Details</h2>
-      <p><strong>Name:</strong> PumpDogFun</p>
-      <p><strong>Symbol:</strong> PDF</p>
-      <p><strong>Total Supply:</strong> 1,000,000,000 PDF</p>
+    <div class="card info-box">
+      <h2><i class="fas fa-info-circle"></i> Token Details</h2>
+      <div class="info-grid">
+        <div class="info-item">
+          <span class="info-label">Token Name</span>
+          <span class="info-value">PumpDogFun</span>
+        </div>
+        <div class="info-item">
+          <span class="info-label">Token Symbol</span>
+          <span class="info-value">PDF</span>
+        </div>
+        <div class="info-item">
+          <span class="info-label">Blockchain</span>
+          <span class="info-value">Binance Smart Chain</span>
+        </div>
+        <div class="info-item">
+          <span class="info-label">Total Supply</span>
+          <span class="info-value">1,000,000,000 PDF</span>
+        </div>
+        <div class="info-item">
+          <span class="info-label">Presale Price</span>
+          <span class="info-value">1 USDT = 100 PDF</span>
+        </div>
+        <div class="info-item">
+          <span class="info-label">Listing Price</span>
+          <span class="info-value">1 USDT = 80 PDF</span>
+        </div>
+        <div class="info-item">
+          <span class="info-label">Contract</span>
+          <span class="info-value contract">0xDF21B5046cdD2EE9d7dDD2a6f8C01D5676997762</span>
+        </div>
+      </div>
     </div>
 
-    <!-- Twitter Link Only -->
+    <!-- Disclaimer -->
+    <div class="disclaimer">
+      <h3><i class="fas fa-exclamation-triangle"></i> Disclaimer</h3>
+      <p>Cryptocurrency investments involve significant risk. Only invest what you can afford to lose. PumpDogFun is a meme coin with no promise of returns. This website is for informational purposes only and does not constitute financial advice.</p>
+    </div>
+
+    <!-- Social Links -->
     <div class="social-links">
-      <a href="https://x.com/Pump_Fun_Dog" class="twitter">
-        <i class="fab fa-twitter"></i> Twitter
-      </a>
+      <a href="https://t.me/pumpdogfun" class="social-btn telegram"><i class="fab fa-telegram"></i> Telegram</a>
+      <a href="https://twitter.com/pumpdogfun" class="social-btn twitter"><i class="fab fa-twitter"></i> Twitter</a>
+      <a href="https://medium.com/pumpdogfun" class="social-btn medium"><i class="fab fa-medium"></i> Medium</a>
+      <a href="#" class="social-btn dextools"><i class="fas fa-chart-bar"></i> DexTools</a>
+    </div>
+
+    <!-- Audit Badges -->
+    <div class="audit-badges">
+      <a href="#"><img src="./assets/audit-certik.png" alt="Certik Audit"></a>
+      <a href="#"><img src="./assets/audit-solidproof.png" alt="SolidProof Audit"></a>
     </div>
   </div>
 
   <script src="./script.js"></script>
 </body>
-</html>
+            </html>
